@@ -55,8 +55,7 @@ export default App;
 | `header`      | React.Node  | Non    | Contenu de l'en-tête de la modale                             |
 | `body`        | React.Node  | Oui    | Contenu principal de la modale                                |
 | `footer`      | React.Node  | Non    | Contenu du pied de page de la modale                          |
-| `isOpen`      | React.bool  | Non    | Etat de la modale fermer ou ouverte                          |
-| `children`    | React.Node  | Non    | Élément déclenchant l'ouverture de la modale                  |
+| `isOpen`      | React.bool  | Non    | Etat de la modale fermer ou ouverte                           |
 
 ## 🎨 Personnalisation
 

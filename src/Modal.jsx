@@ -28,5 +28,4 @@ Modal.propTypes = {
   body: PropTypes.node.isRequired,
   footer: PropTypes.node,
   isOpen: PropTypes.bool,
-  children: PropTypes.node,
 };
