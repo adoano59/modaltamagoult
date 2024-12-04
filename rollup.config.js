@@ -6,7 +6,7 @@ import postcss from "rollup-plugin-postcss";
 import terser from "@rollup/plugin-terser";
 
 export default {
-  input: "src/modal.jsx", // Le point d'entrée de ton composant
+  input: "src/modal.jsx", // Le point d'entrée du composant
   output: [
     {
       file: "dist/index.cjs.js",
@@ -28,7 +28,7 @@ export default {
       presets: ["@babel/preset-react"]
     }),
     postcss({
-      extract: "modal.css", // Génère le fichier modal.css dans le dossier dist
+      extract: "modal.css", 
       minimize: true
     }),
     terser()
