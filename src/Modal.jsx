@@ -1,17 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './modal.css';
-
-export default function Modal({ header, body, footer,  isOpen, children }) {
- 
-
+/**
+ * @param {node} header - Le contenu de l'en-tête de la modale.
+ * @param {node} body - Le contenu principal de la modale.
+ * @param {node} footer - Le contenu du pied de page de la modale.
+ * @param {bool} isOpen - Un booléen indiquant si la modale est visible.
+ */
+export default function Modal({ header, body, footer, isOpen }) {
   return (
     <>
-      {children}
-
       <div
         className={`modal ${isOpen ? 'modal-visible' : ''}`}
-    
       >
         <div className="modal-content">
           {header && <div className="modal-header">{header}</div>}
@@ -22,7 +22,6 @@ export default function Modal({ header, body, footer,  isOpen, children }) {
     </>
   );
 }
-
 Modal.propTypes = {
   header: PropTypes.node,
   body: PropTypes.node.isRequired,
